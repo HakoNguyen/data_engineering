@@ -1,0 +1,9 @@
+Thể loại
+Sách
+- mô tả
+- UPC
+- loại sản phẩm
+- Price
+- Khả dụng 
+- số reviews 
+- rating 
