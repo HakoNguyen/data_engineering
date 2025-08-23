@@ -5,8 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
-import pandas as pd
-
+from utils import save_to_csv,  map_rating
 
 options = Options()
 options.add_argument("--start-maximized")
@@ -49,7 +48,7 @@ while True:
                 "product_type":  category,
                 "price": price,
                 "description": description,
-                "rating": rating
+                "rating": map_rating(rating)
             })
             print(f"✅ Lấy xong: {title}")
 
@@ -67,7 +66,4 @@ while True:
 
 driver.quit()        
 
-
-df = pd.DataFrame(books_data)
-
-df.to_csv("data/books_data.csv", index=False, encoding="utf-8-sig")
+save_to_csv(books_data)
