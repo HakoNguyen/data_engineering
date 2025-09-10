@@ -8,8 +8,6 @@ __pycache__/
 *.pyd
 
 # Virtual environments
-.venv/
-venv/
 
 # OS files
 .DS_Store
