@@ -7,7 +7,6 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Virtual environments
 
 # OS files
 .DS_Store
@@ -18,9 +17,7 @@ Thumbs.db
 .idea/
 *.code-workspace
 
-# Local env and secrets
-.env
-*/.env
+
 
 # Data outputs
 src/data/raw/

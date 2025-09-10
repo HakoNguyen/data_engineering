@@ -242,3 +242,6 @@
 {"timestamp":"2025-09-10T16:58:25.910315","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/xweather_etl.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-09-10T16:58:57.203269","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/xweather_etl.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-09-10T16:59:27.857729","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/xweather_etl.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T16:59:58.277478","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/xweather_etl.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T17:00:29.087679","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/xweather_etl.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T17:01:00.148367","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/xweather_etl.py","logger":"airflow.models.dagbag.DagBag"}
