@@ -17,7 +17,8 @@ Thumbs.db
 .idea/
 *.code-workspace
 
-
+.env
+*/.env
 
 # Data outputs
 src/data/raw/
