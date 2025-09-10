@@ -1,0 +1,12 @@
+{"timestamp":"2025-09-10T16:13:11.529707","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-10T16:13:11.532097","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/xweather_etl.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T16:13:11.869534Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T16:13:11.870624Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T16:13:11.871886Z","level":"info","event":"Current task name:extract","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T16:13:11.872558Z","level":"info","event":"Dag name:xweather_etl","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T16:13:12.543056","level":"info","event":"[OK] Saved to /opt/airflow/dags/src/data/raw/xweather_storms_20250910_161312.json","logger":"root"}
+{"timestamp":"2025-09-10T16:13:12.547406","level":"info","event":"Done. Returned value was: /opt/airflow/dags/src/data/raw/xweather_storms_20250910_161312.json","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-09-10T16:13:12.548266","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01993466-ff90-7ebe-8fe4-b6b8b8782842'), task_id='extract', dag_id='xweather_etl', run_id='manual__2025-09-10T16:13:09.346129+00:00', try_number=1, map_index=-1, hostname='1503b4f0d6f0', context_carrier={}, task=<Task(PythonOperator): extract>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2025, 9, 10, 16, 13, 10, 411398, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/xweather_etl/runs/manual__2025-09-10T16%3A13%3A09.346129%2B00%3A00/tasks/extract?try_number=1')","logger":"task"}
+{"timestamp":"2025-09-10T16:13:12.642419Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T16:13:12.645647Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T16:13:12.648108Z","level":"info","event":"Task operator:<Task(PythonOperator): extract>","chan":"stdout","logger":"task"}

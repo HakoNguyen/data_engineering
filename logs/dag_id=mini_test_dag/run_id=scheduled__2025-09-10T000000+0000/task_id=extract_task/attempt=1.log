@@ -1,0 +1,12 @@
+{"timestamp":"2025-09-10T15:17:29.547526","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-10T15:17:29.548905","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/test_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:17:32.950461Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T15:17:32.951181Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T15:17:32.952219Z","level":"info","event":"Current task name:extract_task","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T15:17:32.953498Z","level":"info","event":"Dag name:mini_test_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T15:17:32.954749Z","level":"info","event":"📡 Extracting data... done","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T15:17:32.954905","level":"info","event":"Done. Returned value was: storm_data.json","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-09-10T15:17:32.955380","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01993433-dd28-7141-99c9-cb39c79c9030'), task_id='extract_task', dag_id='mini_test_dag', run_id='scheduled__2025-09-10T00:00:00+00:00', try_number=1, map_index=-1, hostname='1503b4f0d6f0', context_carrier={}, task=<Task(PythonOperator): extract_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2025, 9, 10, 15, 17, 20, 286742, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/mini_test_dag/runs/scheduled__2025-09-10T00%3A00%3A00%2B00%3A00/tasks/extract_task?try_number=1')","logger":"task"}
+{"timestamp":"2025-09-10T15:17:33.112316Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T15:17:33.121267Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-10T15:17:33.123386Z","level":"info","event":"Task operator:<Task(PythonOperator): extract_task>","chan":"stdout","logger":"task"}

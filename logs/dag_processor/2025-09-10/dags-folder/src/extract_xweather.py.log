@@ -1,0 +1,40 @@
+{"timestamp":"2025-09-10T15:44:02.584501","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:44:32.876282","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:45:03.671833","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:45:34.016020","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:46:04.609811","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:46:16.306874","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:46:16.324949","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:46:46.479245","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:46:46.499188","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:47:15.204068","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:47:21.677585","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:47:52.655868","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:48:03.299697","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:48:13.091441","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:48:15.879231","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:48:20.583651","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:48:51.008452","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:49:21.442677","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:49:41.397833","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:49:41.453348","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:49:50.816151","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:49:50.838319","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:49:55.690167","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:49:55.716939","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:50:26.179428","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:50:26.211221","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:50:56.664285","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:50:56.686012","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:51:27.142988","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:51:27.173077","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:51:57.641740","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:51:57.665250","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:52:27.886374","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:52:27.906050","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:52:58.393948","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:52:58.430004","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:53:28.926777","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:53:28.948187","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:53:59.220636","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/src/extract_xweather.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-10T15:53:59.250529","level":"info","event":"File /opt/airflow/dags/src/extract_xweather.py assumed to contain no DAGs. Skipping.","logger":"airflow.models.dagbag.DagBag"}

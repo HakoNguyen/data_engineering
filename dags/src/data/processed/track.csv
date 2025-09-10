@@ -1,0 +1,47 @@
+storm_id,track_name,storm_type,storm_cat,advisory,directionDEG,speed,wind_speed,gust_speed,pressure,lon,lat
+2025-EP-11,Tropical Depression Eleven-e,TD,TD,1,270,8,56,,1009,-122.3,14.4
+2025-EP-11,Tropical Storm Kiko,TS,TS,2,270,8,64,,1007,-123.1,14.4
+2025-EP-11,Tropical Storm Kiko,TS,TS,3,270,8,64,,1006,-124.0,14.4
+2025-EP-11,Tropical Storm Kiko,TS,TS,4,270,8,72,,1004,-124.6,14.5
+2025-EP-11,Tropical Storm Kiko,TS,TS,5,265,7,72,,1004,-125.5,14.1
+2025-EP-11,Tropical Storm Kiko,TS,TS,6,265,7,96,,998,-126.3,14.0
+2025-EP-11,Tropical Storm Kiko,TS,TS,7,255,6,105,,999,-126.7,13.8
+2025-EP-11,Tropical Storm Kiko,TS,TS,8,265,6,105,,993,-127.3,13.8
+2025-EP-11,Hurricane Kiko,H,H1,9,270,6,120,139.0,990,-127.9,13.8
+2025-EP-11,Hurricane Kiko,H,H1,10,270,5,137,,987,-128.3,13.8
+2025-EP-11,Hurricane Kiko,H,H2,11,270,5,161,,980,-128.9,13.9
+2025-EP-11,Hurricane Kiko,H,H2,12,270,6,169,,970,-129.5,13.8
+2025-EP-11,Hurricane Kiko,H,H2,13,270,6,169,,973,-130.1,13.8
+2025-EP-11,Hurricane Kiko,H,H2,14,270,6,177,,970,-130.6,13.9
+2025-EP-11,Hurricane Kiko,H,H4,15,270,8,209,,955,-131.6,13.9
+2025-EP-11,Hurricane Kiko,H,H4,16,265,8,233,,944,-132.3,13.8
+2025-EP-11,Hurricane Kiko,H,H4,17,265,7,233,,944,-133.0,13.7
+2025-EP-11,Hurricane Kiko,H,H4,18,270,8,209,,951,-133.7,13.8
+2025-EP-11,Hurricane Kiko,H,H4,19,275,8,209,,951,-134.6,13.9
+2025-EP-11,Hurricane Kiko,H,H3,20,275,8,201,,954,-135.4,13.9
+2025-EP-11,Hurricane Kiko,H,H3,21,270,8,201,,955,-136.2,13.9
+2025-EP-11,Hurricane Kiko,H,H3,22,285,8,185,,962,-137.1,14.2
+2025-EP-11,Hurricane Kiko,H,H4,23,290,9,209,,951,-137.8,14.5
+2025-EP-11,Hurricane Kiko,H,H4,24,290,10,225,,946,-138.7,14.9
+2025-EP-11,Hurricane Kiko,H,H4,25,285,9,225,,946,-139.7,15.1
+2025-EP-11,Hurricane Kiko,H,H4,26,290,10,209,,948,-140.5,15.5
+2025-EP-11,Hurricane Kiko,H,H4,27,295,10,209,,947,-142.1,16.5
+2025-EP-11,Hurricane Kiko,H,H4,28,295,10,225,,946,-142.4,16.5
+2025-EP-11,Hurricane Kiko,H,H3,29,300,11,201,,960,-143.4,17.1
+2025-EP-11,Hurricane Kiko,H,H3,30,300,11,185,,965,-144.4,17.6
+2025-EP-11,Hurricane Kiko,H,H2,31,300,11,177,,974,-145.5,18.1
+2025-EP-11,Hurricane Kiko,H,H2,32,305,12,169,,974,-146.6,18.9
+2025-EP-11,Hurricane Kiko,H,H2,33,305,12,161,,982,-147.6,19.6
+2025-EP-11,Hurricane Kiko,H,H1,34,300,13,137,,984,-148.8,20.3
+2025-EP-11,Hurricane Kiko,H,H1,35,305,13,137,,990,-149.9,21.0
+2025-EP-11,Hurricane Kiko,H,H1,36,305,12,121,,997,-150.9,21.6
+2025-EP-11,Tropical Storm Kiko,TS,TS,37,290,12,96,,1004,-152.1,21.9
+2025-EP-11,Tropical Storm Kiko,TS,TS,38,290,12,72,,1007,-153.4,22.4
+2025-EP-11,Tropical Storm Kiko,TS,TS,39,290,12,64,,1008,-154.9,22.9
+2025-EP-11,Tropical Storm Kiko,TS,TS,40,285,12,64,,1008,-156.3,22.9
+2025-EP-11,Tropical Storm Kiko,TS,TS,41,280,11,64,,1008,-157.1,22.4
+2025-EP-11,Post-tropical Cyclone Kiko,LO,LO,42,270,10,56,,1009,-158.1,22.9
+2026-SH-03,Tropical Cyclone Three,TC,TS,1,270,5,65,83.0,1006,69.3,-9.1
+2026-SH-03,Tropical Cyclone Three,TC,TS,2,240,9,65,83.0,1005,68.4,-9.7
+2026-SH-03,Tropical Cyclone Three,TC,TS,3,255,8,65,83.0,1006,67.2,-10.3
+2026-SH-03,Tropical Cyclone Three,TC,TS,4,270,7,65,83.0,1004,65.4,-10.5

@@ -1,0 +1,37 @@
+# Airflow runtime logs (mounted)
+logs/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Local env and secrets
+.env
+*/.env
+
+# Data outputs
+src/data/raw/
+src/data/processed/
+dags/src/data/raw/
+dags/src/data/processed/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker
+*.pid
