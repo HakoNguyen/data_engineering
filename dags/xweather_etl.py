@@ -36,6 +36,7 @@ def transform_task(json_path: str, **context):
     return {
         "storm_csv": str((processed_dir / "storm.csv").as_posix()),
         "track_csv": str((processed_dir / "track.csv").as_posix()),
+        "forecast_csv": str((processed_dir / "forecast.csv").as_posix()),
     }
 
 
@@ -43,7 +44,8 @@ def load_task(ti, **context):
     x = ti.xcom_pull(task_ids="transform")
     storm_csv = x.get("storm_csv") if isinstance(x, dict) else None
     track_csv = x.get("track_csv") if isinstance(x, dict) else None
-    ok = save_to_postgres_dag(storm_csv, track_csv)
+    forecast_csv = x.get("forecast_csv") if isinstance(x, dict) else None
+    ok = save_to_postgres_dag(storm_csv, track_csv, forecast_csv)
     if not ok:
         raise RuntimeError("Load to Postgres failed")
 
@@ -52,7 +54,7 @@ with DAG(
     dag_id="xweather_etl",
     default_args=default_args,
     description="Extract Xweather storms, transform to CSV, and load to Postgres",
-    schedule="0 0 * * *",  # daily at 00:00 UTC
+    schedule="0 7 * * *",  # daily at 07:00 UTC
     start_date=datetime(2025, 9, 1),
     catchup=False,
     max_active_runs=1,

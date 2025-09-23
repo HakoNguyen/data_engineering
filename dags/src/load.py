@@ -6,7 +6,7 @@ import logging
 BASE_DIR = Path(__file__).resolve().parent
 PROCESSED_DIR = BASE_DIR / "data" / "processed"
 
-def save_to_postgres_dag(storm_csv, track_csv):
+def save_to_postgres_dag(storm_csv, track_csv, forecast_csv):
     try:
         pg_host = os.getenv("PG_HOST", "postgres")
         pg_port = int(os.getenv("PG_PORT", "5432"))
@@ -43,6 +43,7 @@ def save_to_postgres_dag(storm_csv, track_csv):
             """
             CREATE TABLE IF NOT EXISTS track (
                 storm_id text NOT NULL,
+                track_time text, 
                 track_name text,
                 storm_type text,
                 storm_cat text,
@@ -55,20 +56,48 @@ def save_to_postgres_dag(storm_csv, track_csv):
                 lon double precision,
                 lat double precision,
                 CONSTRAINT fk_track_storm
-                  FOREIGN KEY(storm_id)
-                  REFERENCES storm(storm_id)
-                  ON DELETE CASCADE
+                FOREIGN KEY(storm_id)
+                REFERENCES storm(storm_id)
+                ON DELETE CASCADE
             );
             """
         )
-        cur.execute("TRUNCATE TABLE track, storm;")
+        cur.execute(
+            """
+            CREATE TABLE IF NOT EXISTS forecast (
+                storm_id text NOT NULL,
+                forecast_time text,
+                forecast_name text,
+                storm_type text,
+                storm_cat text,
+                advisory text,
+                directionDEG double precision,
+                speed double precision,
+                wind_speed double precision,
+                gust_speed double precision,
+                pressure double precision,
+                lon double precision,
+                lat double precision,
+                CONSTRAINT fk_forecast_storm
+                FOREIGN KEY(storm_id)
+                REFERENCES storm(storm_id)
+                ON DELETE CASCADE
+            );
+            """
+        )
+        cur.execute("TRUNCATE TABLE track, forecast, storm;")
 
         with open(PROCESSED_DIR / "storm.csv", "r", encoding="utf-8") as f:
             cur.copy_expert("COPY storm FROM STDIN WITH CSV HEADER", f)
 
         with open(PROCESSED_DIR / "track.csv", "r", encoding="utf-8") as f:
             cur.copy_expert(
-                "COPY track (storm_id, track_name, storm_type, storm_cat, advisory, directionDEG, speed, wind_speed, gust_speed, pressure, lon, lat) FROM STDIN WITH CSV HEADER",
+                "COPY track (storm_id, track_time, track_name, storm_type, storm_cat, advisory, directionDEG, speed, wind_speed, gust_speed, pressure, lon, lat) FROM STDIN WITH CSV HEADER",
+                f,
+            )
+        with open(PROCESSED_DIR / "forecast.csv", "r", encoding="utf-8") as f:
+            cur.copy_expert(
+                "COPY forecast (storm_id, forecast_time, forecast_name, storm_type, storm_cat, advisory, directionDEG, speed, wind_speed, gust_speed, pressure, lon, lat) FROM STDIN WITH CSV HEADER",
                 f,
             )
 

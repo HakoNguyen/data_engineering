@@ -55,6 +55,7 @@ def extract_track(data):
             coords = track.get("location", {}).get("coordinates", [None, None])
             track_records.append({
                 "storm_id": storm_id,
+                "track_time": track.get("dateTimeISO"),
                 "track_name": details.get("stormName"),
                 "storm_type": details.get("stormType"),
                 "storm_cat": details.get("stormCat"),
@@ -69,8 +70,38 @@ def extract_track(data):
             })
     return  track_records
 
+def extract_forecast(data):
+    storms = data.get("response",[])
+    forecast_records = []
+
+    for storm in storms:
+        storm_id = storm.get("id")
+        forecasts = storm.get("forecast", [])
+
+        for forecast in forecasts:
+            details = forecast.get("details", {})
+            coords = forecast.get("location", {}).get("coordinates", [None, None])
+            forecast_records.append({
+                "storm_id": storm_id,
+                "forecast_time": forecast.get("dateTimeISO"),
+                "forecast_name": details.get("stormName"),
+                "storm_type": details.get("stormType"),
+                "storm_cat": details.get("stormCat"),
+                "advisory": details.get("advisoryNumber"),
+                'directionDEG': details.get('movement', {}).get('directionDEG'),
+                'speed': details.get('movement', {}).get('speedKTS'),
+                'wind_speed': details.get('windSpeedKPH'),
+                'gust_speed': details.get('gustSpeedKPH'),
+                'pressure': details.get('pressureMB'),
+                "lon": coords[0],
+                "lat": coords[1],
+            })
+    return  forecast_records
+
+
 storm_df = pd.DataFrame(extract_storm(data))
 track_df = pd.DataFrame(extract_track(data))
+forecast_df = pd.DataFrame(extract_forecast(data))
 
 def save_csv(df, file_name, folder=PROCESSED_DIR):
     file_path = folder / file_name
@@ -90,6 +121,7 @@ def transform(json_path: str):
 
     storm_df = pd.DataFrame(extract_storm(data))
     track_df = pd.DataFrame(extract_track(data))
+    forecast_df = pd.DataFrame(extract_forecast(data))
 
     storm_csv, track_csv = None, None
 
@@ -102,6 +134,10 @@ def transform(json_path: str):
             track_csv = save_csv(track_df, "track.csv")
     else:
             print("⚠️ track_df is empty, skip saving track.csv")
+    if not forecast_df.empty:
+            forecast_df = save_csv(forecast_df, "forecast.csv")
+    else:
+            print("⚠️ track_df is empty, skip saving forecast.csv")
 
     return storm_csv, track_csv
 
